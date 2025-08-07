@@ -15,4 +15,4 @@ Este é um projeto simples de **lista de tarefas (To-Do List)** com sistema de *
 - Interface leve e responsiva
 
 ## 📸 Capturas de Tela
-<img src="sistema/assets/testes1" width="400"/> <img src="sistema/assets/testes2" width="400"/>
+<img src="sistema/assets/testes1.png" width="400"/> <img src="sistema/assets/testes2.png" width="400"/>
