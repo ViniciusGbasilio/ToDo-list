@@ -1,0 +1,44 @@
+Feature: Sistema To-Do List com Cadastro e Login
+
+  Background:
+    Given o armazenamento local está limpo
+
+  # CT01
+  Scenario: Cadastro de usuário com dados válidos
+    Given estou na página de cadastro
+    When preencho o campo de email com "usuario@teste.com"
+    And preencho o campo de senha com "123456"
+    And clico em "Cadastrar"
+    Then vejo a mensagem "Cadastro realizado!"
+    And sou redirecionado para a página de login
+
+  # CT02
+  Scenario: Login com credenciais corretas
+    Given o usuário "usuario@teste.com" está cadastrado com a senha "123456"
+    And estou na página de login
+    When preencho o campo de email com "usuario@teste.com"
+    And preencho o campo de senha com "123456"
+    And clico em "Entrar"
+    Then sou redirecionado para a página da lista de tarefas
+
+  # CT03
+  Scenario: Adição de nova tarefa
+    Given estou logado como "usuario@teste.com"
+    And estou na página da lista de tarefas
+    When digito "Estudar JavaScript" no campo de nova tarefa
+    And clico em "Adicionar"
+    Then vejo "Estudar JavaScript" na lista de tarefas
+
+  # CT04
+  Scenario: Marcar tarefa como concluída
+    Given estou logado como "usuario@teste.com"
+    And tenho a tarefa "Ler livro" na lista
+    When clico em "✔️" ao lado da tarefa "Ler livro"
+    Then vejo que a tarefa "Ler livro" está riscada
+
+  # CT05
+  Scenario: Remoção de tarefa
+    Given estou logado como "usuario@teste.com"
+    And tenho a tarefa "Apagar luz" na lista
+    When clico em "❌" ao lado da tarefa "Apagar luz"
+    Then a tarefa "Apagar luz" não está mais na lista
