@@ -13,3 +13,6 @@ Este é um projeto simples de **lista de tarefas (To-Do List)** com sistema de *
 - Marcar tarefas como concluídas
 - Armazenamento local (não perde ao recarregar a página)
 - Interface leve e responsiva
+
+## 📸 Capturas de Tela
+<img src="assets/testes1" width="400"/> <img src="assets/testes2" width="400"/>
