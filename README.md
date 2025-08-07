@@ -3,9 +3,7 @@ Projeto de Teste de Software
 
 # ✅ To-Do List com Login e Cadastro
 
-Este é um projeto simples de **lista de tarefas (To-Do List)** com sistema de **cadastro e login de usuários**, desenvolvido usando HTML, CSS e JavaScript puro. Todas as informações são armazenadas localmente no navegador (localStorage).
-
----
+Este é um projeto simples de **lista de tarefas (To-Do List)** com sistema de **cadastro e login de usuários**, desenvolvido usando HTML, CSS e JavaScript puro. 
 
 ## ✨ Funcionalidades
 
